@@ -153,7 +153,7 @@
     <axis xyz="0 0 0" />
   </joint>
 
-  <link name="imu_link">
+  <!--link name="imu_link">
     <inertial>
       <origin xyz="-0.00552433659106688 0.000168210391520346 0.000514000497342681" rpy="0 0 0" />
       <mass value="0.000528415362211671" />
@@ -183,7 +183,7 @@
     <parent link="robot_base" />
     <child link="imu_link" />
     <axis xyz="0 0 0" />
-  </joint>
+  </joint-->
 
   <link name="lidar_link">
     <inertial>
@@ -207,7 +207,7 @@
     </collision>
   </link>
 
-  <link name='camera_link'>
+  <!--link name='camera_link'>
     <pose>0 0 0 0 0 0</pose>
     <collision name='collision'>
       <origin xyz="0 0 0" rpy="0 0 0"/> 
@@ -243,7 +243,7 @@
   </joint>
 
   <link name="camera_link_optical">
-  </link>
+  </link-->
 
   <joint name="lidar_joint" type="fixed">
     <parent link="robot_base"/>

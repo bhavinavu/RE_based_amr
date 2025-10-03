@@ -73,6 +73,7 @@ def generate_launch_description():
         executable="parameter_bridge",
         arguments=[
             "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+            "/model/amr/pose@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V",
             "/imu@sensor_msgs/msg/Imu[gz.msgs.IMU",
             "/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan",
             "/camera/image@sensor_msgs/msg/Image@gz.msgs.Image",
