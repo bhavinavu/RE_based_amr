@@ -1,7 +1,7 @@
 training_params:
 # Trainer parameters
-    --max-steps: 600000 # (int) The maximum steps for training. The default is ``int(1e6)``
-    --episode-max-steps: 400 # (int) The maximum steps for an episode. The default is ``int(1e3)``
+    --max-steps: 800000 # (int) The maximum steps for training. The default is ``int(1e6)``
+    --episode-max-steps: 500 # (int) The maximum steps for an episode. The default is ``int(1e3)``
     --n-experiments: 1 # (int) Number of experiments. The default is ``1``
 # --show-progress: # Call ``render`` function during training
     --save-model-interval: 10000 # (int) Interval to save model. The default is ``int(1e4)``
@@ -39,13 +39,7 @@ training_params:
 # For only SAC
     --alpha: 0.2 # (float) Temperature parameter. The default is ``0.2``.
     --auto-alpha: # Automatic alpha tuning
-# For only SAC-AE
-    # --stop-q-grad: # Whether stop gradient after convolutional layers at Encoder
 
-# For on-policy algorithms (PPO)
-    # --horizon: 2048  # (int) The default is ``2048``.
-    # --normalize-adv: # Normalize Advantage. default True
-    # --enable-gae: # Enable GAE. Default True
 
 # Testing with tflite models
     --tflite_flag: False
