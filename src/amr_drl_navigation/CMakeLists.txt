@@ -23,7 +23,7 @@ find_package(xacro REQUIRED)
 ament_python_install_package(${PROJECT_NAME})
 
 install(
-  DIRECTORY launch config goals_and_poses models trained_agents
+  DIRECTORY launch config goals_and_poses models 
   DESTINATION share/${PROJECT_NAME}
 )
 
